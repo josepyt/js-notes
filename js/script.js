@@ -204,4 +204,71 @@ console.log("Selamlar!") ;
 // console.log(Soldier.division) ; 
 
 
+// var userName = {name:"Joseph"} ; 
+// Object.freeze(userName) ;
+
+// userName.name = "John" ;
+
+// console.log(userName.name) ; // will output "Joseph" not "John"
+
+
+
+// var userName = {name : "Kaan"} ;
+// Object.seal(userName) ;
+
+// userName.name = "Yusuf" ;
+
+// console.log(userName.name) ; // will output "Yusuf" not "Kaan"
+
+
+
+// let famous = {branch: "math" ,person: "Cahit Arf"} ;
+
+// console.log(Object.keys(famous)) ;
+
+// console.log(Object.values(famous)) ;
+
+// console.log(Object.entries(famous)) ;
+
+
+
+// JSON.stringify() you can change a object as json
+// JSON.parse() you can change a json as object
+
+// let person = {name: "John", age: 30, city: "New York"} ;
+// let personJSON = JSON.stringify(person) ;
+// console.log(personJSON) ;
+
+// let personObj = JSON.parse(personJSON) ;
+// console.log(personObj) ;
+
+
+
+// let model = "Model" ;
+// let cars = {name : "Volvo" , [model] : "S60" } ;
+
+// console.log(cars) ;
+
+
+
+// let object = {name : "" } ;
+
+// let hasIt = object.hasOwnProperty("name") ;
+
+// console.log(hasIt) ; // will output true because "name" is a property of the object.
+
+
+
+// let obj1 = {a : 1 , b : 2} ;
+// let obj2 = {b : 3 , c : 4} ;
+
+// let mergedObj = {...obj1,...obj2} ;
+
+// console.log(mergedObj) ; // will output {a: 1, b: 3, c: 4}
+
+// let merged = Object.assign({}, obj1,obj2) ;
+
+// console.log(merged) ; // will output {a: 1, b: 3, c: 4}
+
+
 
