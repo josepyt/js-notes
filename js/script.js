@@ -473,3 +473,79 @@ console.log("Selamlar!") ;
 // for(let name of ary) {
 //     console.log(name) ;
 // }
+
+
+
+// const soccers = new Set() ;
+
+// soccers.add("Arda Güler") ;
+// soccers.add("Nihat Kahveci") ;
+// console.log(soccers) ;
+
+// soccers.forEach(soccer => {
+//     console.log(soccer) ;
+// })
+
+
+
+// const countries = new Map() ;
+
+// countries.set("Turkey", "Ankara") ;
+// countries.set("Germany", "Berlin") ;
+
+// console.log(countries) ;
+
+// countries.forEach((capital, country) => {
+//     console.log(country + ": " + capital) ;
+// }) ;
+
+// console.log(countries.get("Turkey")) ;
+
+
+
+function click() {
+    console.log("Button clicked") ;
+    document.getElementById('testButton').innerHTML = "Made with Js" ;
+}
+
+function mouseOver() {
+    console.log("Mouse over button") ;
+    document.getElementById('testButton').style.backgroundColor = "yellow" ;
+}
+
+function mouseOut() {
+    console.log("Mouse out button") ;
+    document.getElementById('testButton').style.backgroundColor = "white" ;
+    document.getElementById('testButton').innerHTML = "Test Button" ;
+}
+
+document.getElementById('testButton').addEventListener('mouseover',mouseOver)
+
+document.getElementById('testButton').addEventListener('mouseout',mouseOut)
+
+document.getElementById('testButton').addEventListener('click', click)
+
+const name = document.getElementById('input') ;
+const p = document.getElementById('result')
+name.addEventListener('input', () => {
+    p.innerHTML = "Hello " + name.value ;
+})
+
+
+let form = document.getElementById('form') ;
+document.getElementById('form').addEventListener('submit',function(event) {
+    event.preventDefault() ;
+    const isim = form.elements.isim.value ;
+
+    alert("Hello " + isim)
+ }) ;
+
+ function addList() {
+    let ul = document.getElementById('list') ;
+    const node = document.createElement('li') ;
+    const content = document.createTextNode('New Content Added')
+    node.appendChild(content) ;
+    ul.appendChild(node) ;
+ }
+
+

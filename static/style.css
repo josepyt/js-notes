@@ -70,3 +70,77 @@ p{
     transition: 0.3s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+#testButton {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: hsl(0, 0%, 0%);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+    position: relative;
+    top: 50% ;
+    left: 47% ;
+}
+
+#input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#input:focus {
+    border: 1px solid rgb(164, 161, 67);
+}
+
+#form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#inputText {
+    margin-right: 10px;
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#inputText:focus {
+    border: 1px solid rgb(164, 161, 67);
+}
+
+#submit {
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(164, 161, 67);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: relative;
+    left: 10px;
+}
+

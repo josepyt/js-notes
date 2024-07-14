@@ -13,7 +13,7 @@
     <header>
         <h1>Yusuf Türlü Js Notes</h1>
         <nav>
-            <ul class="list">
+            <ul class="list" id="list">
                 <li>Syntax</li>
                     <li>Data Types</li>
                         <li>Variables</li>
@@ -30,11 +30,17 @@
     <main>
         <div class="container">
             <div class="box">
-                <h2 id="text">Go to files and play with codes!</h2>
+                <button id="testButton" onclick="addList()">Test Button</button>
+                <input id="input" placeholder="Test Stage for You">
+                <p id="result"></p>
+                <form id="form">
+                    <input type="text" name="isim" id="inputText" placeholder="Test Stage for You">
+                    <input type="submit" id="submit">
+                </form>
             </div>
         </div>
     </main>
-    <footer>
+    <footer>    
         <p>&copy; 2024 Yusuf Türlü. All rights reserved.</p>
     </footer>
     <script src="/js/script.js"></script>
