@@ -6,7 +6,6 @@ console.log("Selamlar!") ;
 
 
 
-
 // let i = 0 ;
 // for(i ; i<=10 ; i=i+2) {
 //     console.log("10'a kadar ikişerli sayılar : "  + i) ;
@@ -272,3 +271,205 @@ console.log("Selamlar!") ;
 
 
 
+// console.log("Birinci (First) Log") ;
+
+// setTimeout(() => {
+//     console.log("İkinci (Second) Log") ;
+// }, 3000) ;
+
+// console.log("Üçüncü (Third) Log") ;
+
+
+
+// console.log("Birinci Log") ;
+
+// function norm(text,callback) {
+//     setTimeout(() => {
+//         callback(text) ;
+//     }, 3000) ;
+// } ;
+
+// let value = norm("İkinci Log", (value) => {
+//     console.log(value) ;
+// }) ;
+
+// console.log("Üçüncü Log") ;
+
+
+
+// console.log("Birinci Log") ;
+
+// let settings = false ; //try it as true!
+
+// const promiseFunc = (text) => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if(settings) {
+//                 resolve(text) ;
+//             } else {
+//                 reject(new Error("Settings are not enabled")) ;
+//             }
+//         }, 3000) ;
+//     }) ;
+// }
+// promiseFunc("İkinci Log").then((pr) => console.log(pr)).catch((err) => console.log(err)) ;
+
+// console.log("Üçüncü Log")
+
+
+
+
+// let settings = true ;
+
+// const promiseFunc = (text) => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if(settings) {
+//                 resolve(text) ;
+//             } else {
+//                 reject(new Error("Settings are not enabled")) ;
+//             }
+//         }, 2000) ;
+//     }) ;
+// }
+
+
+// const promiseFunc2 = (text) => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if(settings) {
+//                 resolve(text) ;
+//             } else {
+//                 reject(new Error("Settings are not enabled")) ;
+//             }
+//         }, 2000) ;
+//     }) ;
+// }
+
+// Promise.all([
+//     promiseFunc("İkinci Log"),
+//     promiseFunc2("Üçüncü Log")
+// ])
+// .then((pr) => console.log(pr))
+// .catch((err) => console.log(err)) 
+
+
+
+
+
+// const fetchData = async () => {
+//     let response = await fetch("https://jsonplaceholder.typicode.com/posts/1") ;
+//     let data =  await response.json() ;
+//     return data ;
+// }
+
+// let value = fetchData() ;
+
+// console.log(value) ;
+// fetchData().then((data) => console.log(data)) ; //this method is the best of 3
+
+
+
+// console.log(Math.abs(-3)) ;
+// console.log(Math.ceil(4.2)) ;
+// console.log(Math.floor(4.2)) ;
+// console.log(Math.round(4.2)) ;
+// console.log(Math.max(3,7,5)) ;
+// console.log(Math.min(3,7,5)) ;
+// console.log(Math.random() * 10) ;
+// console.log(Math.floor(Math.random() * 10)) ;
+// console.log(Math.pow(3,4)) ;
+// console.log(Math.sqrt(16)) ;
+
+
+
+// let date = new Date() ;
+
+// console.log(date) ;
+// console.log(date.getFullYear()) ;
+// console.log(date.getMonth()) ;
+
+// let date2 = new Date(2002,11,11) ;
+
+// console.log(date - date2) ;  
+
+// let sayi = Math.random() * 10 + -3
+
+// if(sayi > 0) {
+//     console.log(sayi)
+//     console.log("Sayı pozitif") ;
+// } else if (sayi < 0) {
+//     console.log(sayi)
+//     console.log("Sayı negatif") ;
+// } else {
+//     console.log(sayi)
+//     console.log("Sayı sıfır") ;
+// }
+
+
+// let dayTime = 3 ;
+
+// switch (dayTime) {
+//     case 1:
+//         console.log("Morning")
+//         break;
+//     case 2:
+//         console.log("Noon")
+//         break;
+//     case 3:
+//         console.log("Evening")        
+//         break;
+//     default:
+//         console.log("Invalid day time")
+//         break;
+// }
+
+
+// let u = 1 ;
+
+// for(u ; u<=10 ; u++) {
+//     console.log(u + ": Merhabalar") ;
+// }
+
+
+// let u = 1 ;
+// while(u<=10) {
+//     console.log(u) ;
+//     u++ ;
+// }
+
+// let z = 1 ;
+
+// for(z ; z<=10 ; z++) {
+//     if (z == 7) {
+//         console.log("Loop is broken") ;
+//         break ;
+//     }
+//     console.log(z) ;
+// }
+
+// let q = 1 ;
+
+// for(q ; q<=10 ; q++) {
+//     if (q == 7) {
+//         console.log("I ate the number 7") ;
+//         continue ;
+//     }
+//     console.log(q) ;
+// }
+
+
+// let school = {
+//     name:"Yusuf" , surname: "Türlü" , number: 345
+// }
+
+// for(let key in school) {
+//     console.log(key + ": " + school[key]) ;
+// }
+
+
+// let ary = ["Yusuf" , "Aleyna" , "Deus"] ;
+
+// for(let name of ary) {
+//     console.log(name) ;
+// }
