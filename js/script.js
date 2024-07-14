@@ -1,3 +1,6 @@
+//I was inspired by Berkant Kaya in the notes
+//https://www.youtube.com/@bk.berkantkaya
+
 // alert("Welcome to Web Site!")
 
 console.log("Selamlar!") ;
