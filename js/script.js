@@ -551,4 +551,18 @@ document.getElementById('form').addEventListener('submit',function(event) {
     ul.appendChild(node) ;
  }
 
+document.getElementById('toggleButton').addEventListener('click' , () => {
+    const list = document.getElementById('list') ;
+    list.style.display = list.style.display === 'none'? 'block' : 'none' ;
+    document.getElementById('toggleButton').innerText = list.style.display === 'none'? 'Show List' : 'Hide List' ;
+    localStorage.setItem('listStatus', list.style.display) ;
+    localStorage.setItem('toggleButtonText', document.getElementById('toggleButton').innerText) ;
+    localStorage.setItem('listItems', JSON.stringify(Array.from(list.children))) ;
+} )
+
+document.getElementById('darkModeButton').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('header-dark');
+});
+
 
